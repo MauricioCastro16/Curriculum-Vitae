@@ -65,9 +65,11 @@ const visibleWorkshops = computed(() => props.workshops.filter(w => w.visible))
 }
 
 .education-item {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-left: 1rem;
+  border-left: 3px solid #1a365d;
 }
 
 .education-item:last-child {
@@ -75,59 +77,76 @@ const visibleWorkshops = computed(() => props.workshops.filter(w => w.visible))
 }
 
 .education-header {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .degree {
-  color: #2d3748;
-  font-size: 1.05rem;
+  color: #1a202c;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .institution {
-  color: #4a5568;
+  color: #2d3748;
   font-weight: 500;
-  margin-bottom: 0.25rem;
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+  margin-top: 0.25rem;
 }
 
 .period {
-  color: #718096;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
+  color: #4a5568;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  font-style: italic;
 }
 
 .details {
-  color: #4a5568;
-  margin-top: 0.5rem;
-  line-height: 1.6;
+  color: #2d3748;
+  margin-top: 0.75rem;
+  line-height: 1.8;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.details div {
+  margin-bottom: 0.4rem;
 }
 
 .average {
-  color: #4a5568;
-  font-size: 0.95rem;
+  color: #2d3748;
+  font-size: 1rem;
   margin-top: 0.5rem;
+  padding-left: 1rem;
 }
 
 .workshops-section {
-  margin-top: 1.5rem;
-  padding-top: 1rem;
-  border-top: 1px solid #e2e8f0;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #e2e8f0;
+  padding-left: 1rem;
 }
 
 .workshops-section strong {
-  color: #2d3748;
+  color: #1a202c;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .workshops-list {
   list-style: disc;
-  padding-left: 1.5rem;
-  color: #4a5568;
+  padding-left: 2rem;
+  color: #2d3748;
   margin: 0;
+  line-height: 1.8;
 }
 
 .workshops-list li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 </style>
 

@@ -35,10 +35,11 @@ defineProps<{
 }
 
 .profile-text {
-  color: #4a5568;
-  line-height: 1.7;
+  color: #2d3748;
+  line-height: 1.85;
   text-align: justify;
   margin: 0;
+  font-size: 1.05rem;
 }
 </style>
 

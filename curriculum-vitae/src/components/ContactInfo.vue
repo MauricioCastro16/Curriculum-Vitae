@@ -10,7 +10,7 @@
     </div>
     <div class="contact-item">
       <i class="fab fa-linkedin icon"></i>
-      <a :href="`https://www.linkedin.com/in/${contact.linkedin.replace(/\s+/g, '-').toLowerCase()}`" target="_blank">{{ contact.linkedin }}</a>
+      <a href="https://www.linkedin.com/in/mauricio-nicol%C3%A1s-castro-5342092b8/" target="_blank">{{ contact.linkedin }}</a>
     </div>
     <div class="contact-item">
       <i class="fab fa-github icon"></i>
@@ -41,9 +41,10 @@ defineProps<{
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-size: 0.95rem;
-  padding: 0.5rem 0;
+  font-size: 1rem;
+  padding: 0.6rem 0;
   transition: transform 0.2s ease;
+  line-height: 1.6;
 }
 
 .contact-item:hover {

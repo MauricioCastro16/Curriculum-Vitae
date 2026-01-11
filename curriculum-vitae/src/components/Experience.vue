@@ -72,9 +72,11 @@ const visibleCompetitions = computed(() => props.competitions.filter(c => c.visi
 }
 
 .experience-item {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-left: 1rem;
+  border-left: 3px solid #1a365d;
 }
 
 .experience-item:last-child {
@@ -82,62 +84,82 @@ const visibleCompetitions = computed(() => props.competitions.filter(c => c.visi
 }
 
 .experience-header {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .title {
-  color: #2d3748;
-  font-size: 1.05rem;
+  color: #1a202c;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .company {
-  color: #4a5568;
+  color: #2d3748;
   font-weight: 500;
-  margin-bottom: 0.25rem;
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+  margin-top: 0.25rem;
 }
 
 .period {
-  color: #718096;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
+  color: #4a5568;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  font-style: italic;
 }
 
 .description {
-  color: #4a5568;
-  margin-top: 0.5rem;
-  line-height: 1.6;
+  color: #2d3748;
+  margin-top: 0.75rem;
+  line-height: 1.8;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.description div {
+  margin-bottom: 0.5rem;
 }
 
 .subsection {
-  margin-top: 1.5rem;
-  padding-top: 1rem;
-  border-top: 1px solid #e2e8f0;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #e2e8f0;
+  padding-left: 1rem;
 }
 
 .subsection-title {
-  color: #2d3748;
+  color: #1a202c;
   display: block;
-  margin-bottom: 0.75rem;
-  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .congress-item,
 .competition-item {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  padding-left: 1rem;
+  border-left: 2px solid #cbd5e0;
+  padding-bottom: 0.5rem;
 }
 
 .congress-name,
 .competition-name {
-  color: #4a5568;
+  color: #2d3748;
   font-weight: 500;
-  margin-bottom: 0.25rem;
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.6;
 }
 
 .congress-achievement,
 .competition-achievement {
-  color: #718096;
-  font-size: 0.9rem;
+  color: #4a5568;
+  font-size: 1rem;
   font-style: italic;
+  line-height: 1.7;
+  padding-left: 0.5rem;
 }
 </style>
 

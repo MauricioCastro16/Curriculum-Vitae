@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <DownloadButton />
     <div class="cv-container" id="cv-content">
       <CVHeader 
         :name="cvData.name"
@@ -47,6 +48,7 @@ import ProfessionalProfile from './components/ProfessionalProfile.vue'
 import Education from './components/Education.vue'
 import Experience from './components/Experience.vue'
 import Projects from './components/Projects.vue'
+import DownloadButton from './components/DownloadButton.vue'
 
 const cvData = ref<CVData>(initialCVData)
 </script>

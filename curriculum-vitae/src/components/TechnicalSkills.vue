@@ -59,17 +59,24 @@ defineProps<{
   margin-bottom: 1rem;
 }
 
+.skill-category {
+  margin-bottom: 1.25rem;
+}
+
 .skill-category strong {
   display: block;
-  margin-bottom: 0.25rem;
-  color: #2d3748;
+  margin-bottom: 0.5rem;
+  color: #1a202c;
   font-weight: 600;
+  font-size: 1.05rem;
 }
 
 .skill-category p {
   margin: 0;
-  color: #4a5568;
-  line-height: 1.6;
+  padding-left: 1rem;
+  color: #2d3748;
+  line-height: 1.8;
+  font-size: 1rem;
 }
 </style>
 

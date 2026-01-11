@@ -46,14 +46,16 @@ const visibleProjects = computed(() => props.projects.filter(project => project.
 
 .projects-list {
   list-style: disc;
-  padding-left: 1.5rem;
+  padding-left: 2rem;
   margin: 0;
 }
 
 .project-item {
-  color: #4a5568;
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
+  color: #2d3748;
+  margin-bottom: 0.75rem;
+  line-height: 1.8;
+  font-size: 1rem;
+  padding-left: 0.5rem;
 }
 </style>
 

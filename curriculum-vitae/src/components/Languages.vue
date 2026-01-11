@@ -44,18 +44,23 @@ const visibleLanguages = computed(() => props.languages.filter(lang => lang.visi
 }
 
 .language-item {
-  margin-bottom: 0.75rem;
-  color: #4a5568;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  color: #2d3748;
+  line-height: 1.7;
+  font-size: 1rem;
 }
 
 .language-item strong {
-  color: #2d3748;
+  color: #1a202c;
+  font-weight: 600;
   margin-right: 0.5rem;
 }
 
 .certification {
   font-style: italic;
-  color: #718096;
+  color: #4a5568;
+  font-size: 0.95rem;
 }
 </style>
 

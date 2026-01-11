@@ -50,9 +50,11 @@ const visibleSkills = computed(() => props.skills.filter(skill => skill.visible)
 }
 
 .skills-list li {
-  padding: 0.4rem 0;
-  color: #4a5568;
+  padding: 0.5rem 0 0.5rem 1rem;
+  color: #2d3748;
   border-bottom: 1px solid #e2e8f0;
+  line-height: 1.7;
+  font-size: 1rem;
 }
 
 .skills-list li:last-child {

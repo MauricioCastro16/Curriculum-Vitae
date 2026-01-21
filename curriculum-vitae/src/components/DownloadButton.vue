@@ -8,6 +8,11 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { usePDF } from '../composables/usePDF'
+import type { CVData } from '../types/cv'
+
+const props = defineProps<{
+  cvData: CVData
+}>()
 
 const { generatePDF } = usePDF()
 const isGenerating = ref(false)
@@ -15,7 +20,7 @@ const isGenerating = ref(false)
 const handleDownload = async () => {
   isGenerating.value = true
   try {
-    await generatePDF()
+    await generatePDF(props.cvData)
   } finally {
     // Pequeño delay para que el usuario vea el feedback
     setTimeout(() => {
@@ -88,4 +93,3 @@ const handleDownload = async () => {
   }
 }
 </style>
-

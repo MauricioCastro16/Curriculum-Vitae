@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <DownloadButton />
+    <DownloadButton :cv-data="cvData" />
     <div class="cv-container" id="cv-content">
       <CVHeader 
         :name="cvData.name"
@@ -85,6 +85,52 @@ const cvData = ref<CVData>(initialCVData)
 .cv-right-column {
   background-color: white;
   padding: 2rem 0;
+}
+
+/* Estilos para PDF - reducir tamaños */
+.pdf-export {
+  transform: scale(0.85);
+  transform-origin: top left;
+}
+
+.pdf-export .cv-container {
+  max-width: 1000px;
+}
+
+.pdf-export .cv-body {
+  grid-template-columns: 300px 1fr;
+}
+
+.pdf-export .cv-header {
+  padding: 1.5rem 1.5rem;
+}
+
+.pdf-export .photo {
+  width: 120px;
+  height: 120px;
+}
+
+.pdf-export .name {
+  font-size: 2rem;
+}
+
+.pdf-export .profession {
+  font-size: 1rem;
+}
+
+.pdf-export .section-title {
+  font-size: 0.9rem;
+  padding: 0.7rem 1rem;
+}
+
+.pdf-export .section-content {
+  padding: 0 1.25rem 1rem 1.25rem;
+  font-size: 0.9rem;
+}
+
+.pdf-export .contact-info {
+  padding: 1.5rem 1.25rem;
+  font-size: 0.9rem;
 }
 
 /* A4 Print Styles */
